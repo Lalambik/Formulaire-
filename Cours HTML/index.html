@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+   
+     <form action="mailto:julien.bernier78@gmail.com" method="post">
+
+        <div>
+            <div class="text">
+            <label for="lastName"> <span>*</span> Nom :</label> <br>
+            <input type="text" name="lastName" id="Name" placeholder ="Entrez votre Nom" required /> <br> <br>
+
+            <label for="firstName"> <span>*</span> Prénom :</label> <br>
+            <input type="text" name="firstName" id="firstName" placeholder="Entrez votre Prénom" required /> <br> <br>
+
+            <label for="email"> <span>*</span> Email :</label> <br>
+            <input type="email" name="email" id="email" placeholder="Entrez votre Adresse Mail" required /> <br> <br>      
+
+            <label for="age"> <span>*</span> Age </label> <br>
+            <input type="age" name="age" id="age" placeholder="Entrez votre age" required /> <br>
+            </div>
+        </div>
+
+        <div>   
+            <label>Est-ce que tu recommanderais Automation Tester Academy à un ami ? </label> <br>
+            <div class="radio">
+            <label>
+            <input type="radio" name="recommandation" value="YES"> 
+            Oui
+            </label> <br>
+            <label>
+            <input type="radio" name="recommandation" value="No">
+            Non
+            </label> <br>
+            <label>
+            <input type="radio" name="recommandation" value="Maybe">
+            Peut-être
+            </label>
+            </div>
+        </div><br>
+
+        <div>
+            <label class="checkbox"> Frameworks d'automatisation de tests que vous connaissez ? </label> <br>
+            <div class="test"><input type="checkbox" name="Skills" value="cypress"> Cypress <br>
+            <input type="checkbox" name="Skills" value="selenium"> Selenium Webdriver <br>
+            <input type="checkbox" name="Skills" value="protractor"> Protractor <br>
+            <input type="checkbox" name="Skills" value="appium"> Appium <br>
+            <input type="checkbox" name="Skills" value="calabach"> Calabash <br>
+            </div>
+        </div>
+        <div>
+            <label for="level" class="level"> Comment trouvez vous HTML ? <span>*</span> </label> <br>
+            <select name="level" id="level">
+                <option value="easy"> Facile </option>
+                <option value="medium"> Moyen </option>
+                <option value="high"> Difficile </option>
+                <option value="very-high"> Très Difficile </option>
+        </select>
+        </div>
+        <div>
+             <label class="target" for="suggestion">Vos suggestion pour la formation !</label> <br>
+            <textarea name="suggestion" id="suggestion"></textarea>
+        </div>
+
+            <button type="submit" value="submit">ENVOYER</button> <br> <br>
+            <button type="reset" value="reset">ANNULER</button>
+    </form>
+</body>
+</html>
